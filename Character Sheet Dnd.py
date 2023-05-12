@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 import random
 import json # to import in json format
        
