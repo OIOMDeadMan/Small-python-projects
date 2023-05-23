@@ -1,0 +1,27 @@
+#zmienna aby nie używać liczb
+height = 7
+width = 60
+numbers = [1]
+
+line = ' '
+for n in numbers:
+    line+= '%3d ' %(n)
+print(line.center(width))
+
+for i in range(height-1):
+    newNumbers = [1]
+
+    position = 0
+# dajemy długośc -1 aby nie dodawać liczby z poza zakresu
+    while position < len(numbers) - 1:
+        newNumbers.append(numbers[position] + numbers[position+1])
+        position+=1
+                          
+    newNumbers.append(1)
+
+    numbers = newNumbers.copy()
+                          
+    line = ' '
+    for n in numbers:
+        line+= '%3d ' %(n)
+    print(line.center(width))

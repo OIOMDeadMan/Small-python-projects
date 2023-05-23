@@ -1,0 +1,19 @@
+# sprawdzenie czy wprowadzane słowo to palindrom
+
+word = input('Insert word: ')
+
+# zmieniam napis na liste
+split_word = list(word)
+
+print(split_word)
+
+reverse_word = split_word.copy()
+
+reverse_word.reverse()
+
+print(reverse_word)
+
+if split_word == reverse_word:
+    print(' this is palindrom')
+else:
+    print('the word isnt palindrom')
