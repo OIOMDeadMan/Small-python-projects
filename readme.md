@@ -1,2 +1,2 @@
 # Small Python projects
-## Here i will put small, simple projects that I'm working on
+## Here are some simple Python projects that I'working on.
